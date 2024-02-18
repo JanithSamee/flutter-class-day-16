@@ -27,22 +27,24 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text("Login"),
+              Text("Login".tr),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
                   onChanged: (value) => setState(() {
                     username = value;
                   }),
-                  decoration: const InputDecoration(
-                      border: OutlineInputBorder(), labelText: "Username"),
+                  decoration: InputDecoration(
+                      border: const OutlineInputBorder(),
+                      labelText: "Username".tr),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
-                  decoration: const InputDecoration(
-                      border: OutlineInputBorder(), labelText: "Password"),
+                  decoration: InputDecoration(
+                      border: const OutlineInputBorder(),
+                      labelText: "Password".tr),
                 ),
               ),
               Text("Entered Username : $username"),
